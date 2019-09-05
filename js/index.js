@@ -76,3 +76,29 @@ const ctaButton = cta.children[1];
 
 ctaH1.innerText = siteContent.cta.h1;
 ctaButton.innerText = siteContent.cta.button;
+
+/**
+ *  Main Content
+ * */
+
+const textContent = document.querySelectorAll('.text-content');
+const features = textContent[0];
+const about = textContent[1];
+const services = textContent[2];
+const product = textContent[3];
+const vision = textContent[4];
+
+features.children[0].innerText = siteContent['main-content']['features-h4'];
+features.children[1].innerText = siteContent['main-content']['features-content'];
+
+about.children[0].innerText = siteContent['main-content']['about-h4'];
+about.children[1].innerText = siteContent['main-content']['about-content'];
+
+services.children[0].innerText = siteContent['main-content']['services-h4'];
+services.children[1].innerText = siteContent['main-content']['services-content'];
+
+product.children[0].innerText = siteContent['main-content']['product-h4'];
+product.children[1].innerText = siteContent['main-content']['product-content'];
+
+vision.children[0].innerText = siteContent['main-content']['vision-h4'];
+vision.children[1].innerText = siteContent['main-content']['vision-content'];
