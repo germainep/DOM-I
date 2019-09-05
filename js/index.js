@@ -54,3 +54,14 @@ ctaImage.setAttribute('src', siteContent.cta['img-src']);
 
 const midImage = document.getElementById('middle-img');
 midImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+/** *
+ *  Nav content
+ */
+
+const nav = document.getElementsByTagName('nav');
+const navChildArray = Array.from(nav[0].children);
+console.log(navChildArray);
+navChildArray.forEach((el, index) => {
+  el.innerText = siteContent.nav[`nav-item-${index + 1}`];
+});
