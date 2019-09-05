@@ -102,3 +102,18 @@ product.children[1].innerText = siteContent['main-content']['product-content'];
 
 vision.children[0].innerText = siteContent['main-content']['vision-h4'];
 vision.children[1].innerText = siteContent['main-content']['vision-content'];
+
+/**
+ * Contact
+ */
+
+const contact = document.querySelector('.contact');
+const contactH4 = contact.children[0];
+const phone = contact.children[2];
+const email = contact.children[3];
+const address = contact.children[1];
+
+contactH4.innerText = siteContent.contact['contact-h4'];
+address.innerText = siteContent.contact.address;
+phone.innerText = siteContent.contact.phone;
+email.innerText = siteContent.contact.email;
