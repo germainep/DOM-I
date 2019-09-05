@@ -117,3 +117,10 @@ contactH4.innerText = siteContent.contact['contact-h4'];
 address.innerText = siteContent.contact.address;
 phone.innerText = siteContent.contact.phone;
 email.innerText = siteContent.contact.email;
+
+/**
+ * Footer
+ */
+
+const footer = document.querySelector('footer');
+footer.children[0].innerText = siteContent.footer.copyright;
