@@ -64,8 +64,16 @@ const navChildArray = Array.from(nav[0].children);
 
 navChildArray.forEach((el, index) => {
   el.innerText = siteContent.nav[`nav-item-${index + 1}`];
+  el.style.color = 'green';
 });
 
+const whatever = document.createElement('a');
+whatever.innerText = 'whatever';
+nav[0].prepend(whatever);
+
+const youWant = document.createElement('a');
+youWant.innerText = 'you want';
+nav[0].append(youWant);
 /**
  * CTA content
  */
