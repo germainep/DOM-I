@@ -61,7 +61,18 @@ midImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 const nav = document.getElementsByTagName('nav');
 const navChildArray = Array.from(nav[0].children);
-console.log(navChildArray);
+
 navChildArray.forEach((el, index) => {
   el.innerText = siteContent.nav[`nav-item-${index + 1}`];
 });
+
+/**
+ * CTA content
+ */
+
+const cta = document.querySelector('.cta-text');
+const ctaH1 = cta.children[0];
+const ctaButton = cta.children[1];
+
+ctaH1.innerText = siteContent.cta.h1;
+ctaButton.innerText = siteContent.cta.button;
